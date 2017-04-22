@@ -32,6 +32,6 @@ input {
   margin: 10px;
 }
 
-label.checked {
+input:checked + label {
   text-decoration: line-through;
 }
