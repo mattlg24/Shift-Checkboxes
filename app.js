@@ -7,17 +7,17 @@ window.onload = function() {
     function handleCheck(e) {
 
         let inBetween = false
-
+        // check if shiftkey was pressed
+        // And check that they are checking it
         if (e.shiftKey && this.checked) {
-
+          // loop over every single checkbox
             checkboxes.forEach(checkbox => {
-
                 if (checkbox === this || checkbox === lastChecked) {
-                  inBetween = !inBetween
+                    inBetween = !inBetween
                 }
 
                 if (inBetween) {
-                  checkbox.checked = true
+                    checkbox.checked = true
                 }
             })
         }
